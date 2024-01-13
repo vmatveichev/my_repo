@@ -33,7 +33,7 @@ void ProgThread::main()
     //t1.detach();
     
     //Fctor fct;
-    string s = "Hello, I'm Slava and I'm new HARMAN employee.";
+    string s = "Hello, I'm Slava";
     std::thread t2((Fctor()), std::ref(s));
     std::thread t3 = std::move(t2);
 //    t3.join();    

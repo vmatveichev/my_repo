@@ -9,7 +9,7 @@
 
 int main()
 {
-    cout << "\nHI HARMAN!!!" << endl;
+    cout << "\nHI SLAVA!!!" << endl;
     cout <<"\n==============  THREAD MANAGEMENT (+ Exceptions) ==============\n";
     ProgThread pt;
     try
@@ -18,7 +18,7 @@ int main()
     }
     catch (myException ex)
     {
-        cout << "exception " << ex.getStr() << " is caught in HARMAN file" << endl;
+        cout << "exception " << ex.getStr() << " is caught" << endl;
     }
     
     cout <<"\n==============  DATA RACE and MUTEX (+ files) ==============\n";
