@@ -1,0 +1,36 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"command": "cargo ${input:command} --manifest-path ./rust/cargo/${input:proj}/Cargo.toml",
+			"label": "rust: cargo"
+		}
+	],
+	"inputs": [
+		{
+			"id": "proj",
+			"description": "Rust proj",
+			"type": "pickString",
+			"options": [
+				"hello_cargo",
+				"guessing_game"
+			],
+			"default": "guessing_game"
+		},
+		{
+			"id": "command",
+			"description": "cargo command",
+			"type": "pickString",
+			"options": [
+				"build",
+				"check",
+				"run"
+			],
+			"default": "guessing_game"
+		}
+	]
+}

@@ -1,5 +1,3 @@
-# vscode
-.vscode/
 # Rust, Cargo
 target/
 Cargo.lock
